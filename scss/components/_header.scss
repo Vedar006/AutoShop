@@ -1,0 +1,548 @@
+.header {
+  position: absolute;
+  width: 100%;
+  // margin-bottom: -105px;
+  // color: var(--black-color);
+  // background-color: rgb(65, 59, 59);
+  border-bottom: 1px solid var(--light-color);
+
+  @include mobile {
+    width: 100%;
+  }
+
+  &-form {
+
+    &__btns {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      @include mobile {
+        justify-content: center;
+      }
+
+      a {
+        font-family: 'Inter';
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+
+
+        text-decoration: underline;
+        text-transform: uppercase;
+
+        /* Platina */
+
+        color: var(--platina-color);
+
+      }
+    }
+
+    &__police {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+
+
+
+      color: var(--black-color);
+
+    }
+  }
+
+  &-modal {
+    width: 1170px;
+    min-height: 1120px;
+    border-radius: 0;
+    @include mobile {
+      max-width: 400px;
+    }
+
+
+    &__subtitle {
+      font-family: 'Inter';
+
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+
+
+      text-transform: uppercase;
+
+
+
+      color: var(--black-color);
+    }
+
+    &__content {
+      padding-top: 30px;
+    }
+
+    &__close {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 40px;
+      height: 40px;
+    }
+
+    &__title {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      text-transform: uppercase;
+
+      color: var(--red-color);
+
+
+    }
+
+    &__item {
+      position: relative;
+      display: flex;
+      gap: 30px;
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+
+    &__items {
+      height: 500px;
+      overflow-y: scroll;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      @include mobile {
+        padding-bottom: 30px;
+      }
+    }
+
+    &__price {
+      margin-bottom: 30px;
+      font-family: 'Inter';
+
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+
+
+      text-transform: uppercase;
+
+
+
+      color: var(--red-color);
+
+    }
+
+    &__summ {
+      font-family: 'Inter';
+
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+
+
+      text-transform: uppercase;
+
+
+      color: var(--black-color);
+
+    }
+
+    &__bottom {
+      border-top: 1px solid var(--black-color);
+      padding-top: 30px;
+    }
+
+    &__form {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      @include mobile {
+        align-items: center;
+      }
+    }
+
+    &__input {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        padding: 0 10px;
+        color: var(--black-color);
+        // box-shadow: inset 0px 3px 6px 4px var(--red-color);
+        border: 1px solid var(--black-color);
+        background-color: transparent;
+        height: 40px;
+        width: 518px;
+
+        @include mobile {
+
+          width: 290px;
+        }
+      }
+
+      &-text {
+        width: 518px;
+        height: 110px;
+        textarea {
+          resize: none;
+          width: 100%;
+          height: 100%;
+        }
+        @include mobile {
+          width: 290px;
+        }
+      }
+    }
+
+    &__btn {
+      width: 270px;
+      color: var(--light-color);
+    }
+  }
+
+  &__container {
+    position: relative;
+    height: 100px;
+    // padding-top: 20px;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+      width: 100%;
+      justify-content: space-between;
+
+
+    }
+  }
+
+  &__logo {
+    margin-right: 200px;
+
+    @include mobile {
+      margin-right: 0px;
+    }
+
+
+  }
+
+  &__nav {
+    margin-right: 155px;
+
+    &-items {
+      display: flex;
+      gap: 51px;
+      // color: var(--light-color);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+
+
+    }
+
+    &-item {
+      a {
+        color: var(--light-color);
+
+        &:hover {
+          color: rgb(156, 150, 150);
+        }
+      }
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__language {
+    margin-right: 32px;
+    color: var(--light-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    &-item {
+      a {
+        color: var(--light-color);
+      }
+
+      &-active {
+        a {
+          color: var(--red-color);
+        }
+
+      }
+
+
+    }
+
+    @include mobile {
+      display: none;
+    }
+
+
+
+  }
+
+  &__btn {
+    width: 197px;
+    height: 43px;
+    color: var(--light-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      color: var(--red-gradient);
+
+      background: var(--light-color);
+      filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.25));
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &-basket {
+    position: relative;
+    margin-right: 33px;
+
+
+    svg {
+      width: 31px;
+      height: 30px;
+      // fill: var(--light-color);
+      stroke: var(--light-color);
+
+      &:hover {
+        stroke: rgb(156, 150, 150);
+      }
+
+    }
+
+    &__count {
+      position: absolute;
+      top: -10px;
+     left: 17px;
+      border-radius: 100%;
+      // width: 15px;
+      // height: 15px;
+      padding: 2px 7px;
+      background-color: var(--red-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--light-color);
+      font-size: 13px;
+    }
+
+    @include mobile {
+      margin-right: 0px;
+    }
+  }
+
+
+
+
+}
+
+.burger {
+
+  display: none;
+  z-index: 10;
+
+  @include mobile {
+    display: block;
+  }
+
+  @include burger;
+  --burger-width: 28px;
+  --burger-height: 18px;
+
+  &::before {
+    height: 2px;
+    background-color: var(--light-color);
+  }
+
+  &__line {
+    height: 2px;
+    background-color: var(--light-color);
+
+
+
+
+  }
+
+  &::after {
+    height: 2px;
+    background-color: var(--light-color);
+  }
+}
+
+.header-menu {
+  position: absolute;
+  padding: 20px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  min-height: 210px;
+  display: none;
+  justify-content: space-between;
+  gap: 70px;
+  z-index: 5;
+  background-color: var(--black-color);
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 25px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__btn {
+    width: 130px;
+    height: 28px;
+    font-family: 'Inter';
+
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+
+
+    color: var(--light-color);
+  }
+
+  &__langswitch {
+    color: var(--light-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.header-menu.menu--active {
+  display: flex;
+}
+
+.header__mob-bas {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.modal-item {
+ @include mobile {
+  &__img {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+ }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+  }
+
+  &__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    /* Black */
+
+    color: #212322;
+  }
+
+  &__variable {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+
+    text-transform: uppercase;
+
+    span {
+      font-family: 'Inter';
+
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+
+      color: #5B5D5D;
+    }
+
+  }
+
+  &__count {
+    display: flex;
+    gap: 73px;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: var(--black-color);
+  }
+
+  &__delete {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include mobile {
+
+      right:10px;
+      top: 10px;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+      @include mobile {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+}

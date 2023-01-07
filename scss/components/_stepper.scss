@@ -1,0 +1,57 @@
+.stepper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 70px;
+	height: 24px;
+	user-select: none;
+
+
+&__field {
+	overflow: hidden;
+	display: inline-flex;
+	align-items: center;
+	border: 1px solid var(--black-color);
+	width: 100%;
+	height: 100%;
+	padding-left: 20px;
+}
+
+&__input {
+	border: none;
+	width: 10px;
+	height: 100%;
+	outline: none;
+	font-weight: 700;
+	min-width: 2ex;
+}
+
+
+
+&__btns {
+	position: absolute;
+	right: 2px;
+	top: 50%;
+	display: flex;
+	flex-direction: column;
+	border-left: 1px solid var(--black-color);
+	width: 20%;
+	height: calc(100% - 2px);
+	transform: translateY(-50%);
+}
+
+&__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	border: none;
+	height: 50%;
+	background-color: transparent;
+	cursor: pointer;
+}
+}
+.stepper__btn--disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}

@@ -1,0 +1,113 @@
+.footer {
+  min-height: 435px;
+  background-image: url("../img/footer/footer__bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 20px;
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 25px;
+    padding-bottom: 20px;
+    @include mobile {
+      grid-template-columns: repeat(1,1fr);
+      justify-items: start;
+    }
+  }
+
+
+  &__title {
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--light-color);
+    margin-bottom: 25px;
+  }
+
+  &__descr {
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--platina-color);
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__items {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    a {
+      color: var(--light-color);
+    }
+    @include mobile {
+      align-items: start;
+      gap: 30px ;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    a {
+      font-family: 'Inter';
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 22px;
+      color: var(--light-color);
+
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+    }
+  }
+
+  &__bottom {
+    padding-top: 20px;
+    border-top: 1px solid var(--light-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &-title {
+      font-family: 'Inter';
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 22px;
+      color: var(--light-color);
+
+    }
+
+    &-items {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.clients {
+  min-height: 500px;
+
+  &__container {
+    padding-top: 100px;
+    @include mobile {
+      padding-top: 10px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    color: var(--black-color);
+  }
+
+  &__slider-wrapper {
+    display: flex;
+    gap: 5px;
+    @include mobile {
+      gap: 0;
+    }
+  }
+
+  &__slider {
+
+    height: 565px;
+
+    &-slide {
+
+      width: 270px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      img {
+        background: var(--red-gradient);
+      }
+
+    }
+
+  }
+}
+
+.slider-slide__name {
+  font-family: 'Inter';
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  text-transform: uppercase;
+
+  /* Red */
+
+  color: var(--red-color);
+
+}
+
+.slider-slide__descr {
+  font-family: 'Inter';
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+
+
+  color: var(--platina-color);
+}
+.swiper-pagination {
+  padding-top: 50px;
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  @include mobile {
+    display: none;
+  }
+}
+.swiper-pagination-bullet {
+  width: calc(570px / 3);
+  height: 1px;
+  background-color: var(--platina-color);
+}
+.swiper-pagination-bullet-active {
+  border-radius: 3px;
+  width: 170px;
+  height: 4px;
+  background: var(--red-gradient);
+}

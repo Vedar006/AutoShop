@@ -1,0 +1,16 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Inter", sans-serif;
+  --content-width: 1170px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --black-color: #212322;
+  --platina-color: #5B5D5D;
+  --red-color: #CB333B;
+  --red-gradient: linear-gradient(270deg, #CB333B 0%, #631D1B 100%);
+}

@@ -1,0 +1,101 @@
+.components {
+  height: 100vh;
+  background-image: url("../img/section_components/components_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include mobile {
+    background-image: url("../img/section_components/mob__bg.jpg");
+    min-height: 993px;
+    background-position: center;
+  }
+
+  &__title {
+    @include mobile {
+      font-size: 32px;
+      line-height: 39px;
+    }
+  }
+
+  &__container {
+    padding-top: 225px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include mobile {
+      padding-top: 140px;
+    }
+
+  }
+
+
+
+  &__item {
+    font-family: 'Inter';
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+
+
+    /* White */
+
+    color: var(--light-color);
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 30px;
+    }
+
+  }
+
+  &__btn {
+    font-family: 'Inter';
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    /* White */
+
+    color: var(--light-color);
+
+    @include mobile {
+      display: none;
+    }
+
+    &:hover {
+      color: var(--red-gradient);
+
+      background: var(--light-color);
+
+    }
+
+  }
+}
+
+.components__mobile-btn {
+  display: none;
+  align-self: center;
+  text-align: center;
+  width: 290px;
+  height: 64px;
+  font-family: 'Inter';
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--light-color);
+
+  @include mobile {
+    display: flex;
+  }
+}

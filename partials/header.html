@@ -1,0 +1,300 @@
+<header class="header">
+  <div class="container header__container">
+    <a href="#" class="header__logo">
+      <svg width="53" height="59" viewBox="0 0 53 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_17_158)">
+          <path
+            d="M23.5556 0.000977053C13.9861 0.000977053 5.38281 4.73606 0 11.8214H13.549L27.0176 47.2251V20.0588H19.9325V11.8214H36.5065V47.2251H17.0801L14.9062 41.3033H2.12782L0.0115017 47.202C5.38281 54.4026 13.8826 58.9994 23.5441 58.9994C39.8075 58.9994 52.9885 45.7965 52.9885 29.4944C52.9885 13.2039 39.8075 -0.0105438 23.5441 -0.0105438L23.5556 0.000977053ZM4.35916 34.2295H12.2724L8.43077 21.2685L4.35916 34.2295Z"
+            fill="url(#paint0_linear_17_158)" />
+        </g>
+        <defs>
+          <linearGradient id="paint0_linear_17_158" x1="52.9885" y1="29.4944" x2="0" y2="29.4944"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#CB333B" />
+            <stop offset="1" stop-color="#631D1B" />
+          </linearGradient>
+          <clipPath id="clip0_17_158">
+            <rect width="53" height="59" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </a>
+    <nav class="header__nav">
+
+      <ul class="list-reset header__nav-items">
+        <li class="header__nav-item">
+          <a href="#"> каталог</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">О нас</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Видео</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">отзывы</a>
+        </li>
+      </ul>
+
+    </nav>
+    <div class="header__language">
+
+      <span class="header__language-item-active">
+        <a href="#">ru</a>
+      </span>
+      /
+      <span class="header__language-item">
+        <a href="#">en</a>
+      </span>
+    </div>
+    <div class="header__mob-bas">
+      <button class="btn-reset header-basket" data-graph-path="basket-modal">
+        <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M26.3333 24.3333C24.4923 24.3333 22.9999 25.8257 22.9999 27.6667C22.9999 29.5076 24.4923 31 26.3333 31C28.1742 31 29.6666 29.5076 29.6666 27.6667C29.6666 25.8257 28.1742 24.3333 26.3333 24.3333ZM26.3333 24.3333H10.2787C9.44933 24.3333 8.74613 23.7235 8.62883 22.9024L8.11897 19.3333M1.33325 1H5.49992L5.97611 4.33333M5.97611 4.33333H6.33325H32.9999L27.9999 19.3333H8.83325H8.11897M5.97611 4.33333L8.11897 19.3333M16.3333 27.6667C16.3333 29.5076 14.8409 31 12.9999 31C11.159 31 9.66659 29.5076 9.66659 27.6667C9.66659 25.8257 11.159 24.3333 12.9999 24.3333C14.8409 24.3333 16.3333 25.8257 16.3333 27.6667Z"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <div class="header-basket__count">
+          1
+        </div>
+
+
+
+      </button>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+
+
+    <a href="#" class="btn header__btn">Свяжитесь с нами</a>
+
+    <div class="header-menu" data-menu>
+      <div class="header-menu__column">
+        <ul class="list-reset header__nav-items header-menu__items">
+          <li class="header__nav-item">
+            <a href="#"> каталог</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">О нас</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">Видео</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">отзывы</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-menu__column">
+        <div class="header-menu__langswitch">
+
+          <span class="header__language-item-active">
+            <a href="#">ru</a>
+          </span>
+          /
+          <span class="header__language-item">
+            <a href="#">en</a>
+          </span>
+        </div>
+        <a href="#" class="btn header-menu__btn">СвяжИтесь с нами</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="graph-modal">
+    <div class="graph-modal__container header-modal" role="dialog" aria-modal="true" data-graph-target="basket-modal">
+      <div class="header-modal__title">Корзина</div>
+      <button class="btn-reset js-modal-close graph-modal__close header-modal__close"
+        aria-label="Закрыть модальное окно">
+
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M31.6673 8.33334L8.33398 31.6667M8.33401 8.33334L31.6674 31.6667" stroke="url(#paint0_linear_79_484)"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <defs>
+            <linearGradient id="paint0_linear_79_484" x1="31.6674" y1="20" x2="8.33398" y2="20"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#CB333B" />
+              <stop offset="1" stop-color="#631D1B" />
+            </linearGradient>
+          </defs>
+        </svg>
+
+      </button>
+      <div class="graph-modal__content header-modal__content">
+
+        <div class="header-modal__top">
+          <ul class="list-reset header-modal__items">
+
+            <li class="header-modal__item modal-item">
+              <div class="modal-item__img">
+                <img src="img/modal-item.jpg" alt="">
+              </div>
+              <div class="modal-item__text">
+                <span class="modal-item__title">Многофункциональная перегородка</span>
+                <div class="modal-item__variable">
+                  выбранный вариант
+                  <span>SOLO VISION</span>
+                </div>
+                <div class="modal-item__count">
+                  <span>Количество</span>
+                  <div class="stepper">
+                    <label class="stepper__field">
+                      <input type="text" value="1" maxlength="3" class="stepper__input">
+
+                    </label>
+                    <div class="stepper__btns">
+                      <button class="stepper__btn stepper__btn--up" aria-label="Увеличить количество">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5">
+                          <g>
+                            <g>
+                              <path
+                                d="M3.904-.035L-.003 3.151 1.02 5.03l2.988-2.387 2.988 2.387 1.022-1.88-3.89-3.186z">
+                              </path>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                      <button class="stepper__btn stepper__btn--down stepper__btn--disabled"
+                        aria-label="Уменьшить количество">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5">
+                          <g>
+                            <g>
+                              <path
+                                d="M3.904 5.003L-.003 1.818 1.02-.062l2.988 2.386L6.995-.063l1.022 1.88-3.89 3.186z">
+                              </path>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-reset modal-item__delete">
+
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.6673 8.33334L8.33398 31.6667M8.33401 8.33334L31.6674 31.6667"
+                    stroke="url(#paint0_linear_79_484)" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <defs>
+                    <linearGradient id="paint0_linear_79_484" x1="31.6674" y1="20" x2="8.33398" y2="20"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#CB333B" />
+                      <stop offset="1" stop-color="#631D1B" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </button>
+            </li>
+            <li class="header-modal__item modal-item">
+              <div class="modal-item__img">
+                <img src="img/modal-item.jpg" alt="">
+              </div>
+              <div class="modal-item__text">
+                <span class="modal-item__title">Многофункциональная перегородка</span>
+                <div class="modal-item__variable">
+                  выбранный вариант
+                  <span>SOLO VISION</span>
+                </div>
+                <div class="modal-item__count">
+                  <span>Количество</span>
+                  <div class="stepper">
+                    <label class="stepper__field">
+                      <input type="text" value="1" maxlength="3" class="stepper__input">
+
+                    </label>
+                    <div class="stepper__btns">
+                      <button class="stepper__btn stepper__btn--up" aria-label="Увеличить количество">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5">
+                          <g>
+                            <g>
+                              <path
+                                d="M3.904-.035L-.003 3.151 1.02 5.03l2.988-2.387 2.988 2.387 1.022-1.88-3.89-3.186z">
+                              </path>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                      <button class="stepper__btn stepper__btn--down stepper__btn--disabled"
+                        aria-label="Уменьшить количество">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5">
+                          <g>
+                            <g>
+                              <path
+                                d="M3.904 5.003L-.003 1.818 1.02-.062l2.988 2.386L6.995-.063l1.022 1.88-3.89 3.186z">
+                              </path>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-reset modal-item__delete">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.6673 8.33334L8.33398 31.6667M8.33401 8.33334L31.6674 31.6667"
+                    stroke="url(#paint0_linear_79_484)" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <defs>
+                    <linearGradient id="paint0_linear_79_484" x1="31.6674" y1="20" x2="8.33398" y2="20"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#CB333B" />
+                      <stop offset="1" stop-color="#631D1B" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </button>
+            </li>
+
+
+
+
+
+
+          </ul>
+        </div>
+        <div class="header-modal__bottom">
+          <div class="header-modal__price">
+            Итоговая цена:
+            <span class="header-modal__summ">
+              762.000 руб.
+            </span>
+          </div>
+          <span class="header-modal__subtitle">
+            для заказа заполните данные и мы свяжемся с вами в ближайшее время для подтверждения:
+          </span>
+          <form action="/" class="header-modal__form header-form">
+
+            <label class="header-modal__input">
+              Имя
+              <input type="text" class="input-reset">
+            </label>
+            <label class="header-modal__input">
+              Телефон
+              <input type="tel" class="input-reset">
+            </label>
+            <label class="header-modal__input">
+              E-mail
+              <input type="email" class="input-reset">
+            </label>
+            <label class="header-modal__input header-modal__input-text">
+              Сообщение
+              <textarea></textarea>
+            </label>
+            <div class="header-form__btns">
+              <button type="submit" class="btn-reset btn header-modal__btn">СВЯЖИТЕСЬ С НАМИ</button>
+              <a href="#">Вернуться к каталогу</a>
+            </div>
+
+            <span class="header-form__police">Отправляя форму вы соглашаетсь с <a href="#">"Политикой
+                конфиденциальности"</a></span>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</header>

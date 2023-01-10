@@ -157,7 +157,10 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    align-items: center;
+
+    @include mobile {
+      align-items: center;
+    }
 
     &-items {
       display: flex;
@@ -167,6 +170,7 @@
       padding-left: 10px;
       @include mobile {
         text-align: left;
+
       }
     }
 
